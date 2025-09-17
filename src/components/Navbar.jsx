@@ -295,7 +295,7 @@ const Navbar = () => {
                 </p>
               </div>
 
-              <div className="flex gap-2 sm:gap-4 mt-2 sm:mt-4">
+              <div className="flex gap-2 sm:gap-4 mt-2 sm:mt-4 pb-4">
                 <FaInstagram className="cursor-pointer text-lg sm:text-xl md:text-2xl" />
                 <FaFacebookF className="cursor-pointer text-lg sm:text-xl md:text-2xl" />
                 <FaSearch className="cursor-pointer text-lg sm:text-xl md:text-2xl" />
