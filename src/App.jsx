@@ -2,6 +2,7 @@ import { useState } from "react";
 import Navbar from "./components/Navbar";
 import Loader from "./components/Loader/Loader";
 import Services from "./components/Services";
+import Exploration from "./components/Exploration";
 
 
 export default function App() {
@@ -14,7 +15,8 @@ export default function App() {
         <div className="relative">         
           <Navbar />
           <main>  
-            <Services />         
+            <Services />   
+            <Exploration />      
           </main>     
         </div>
       )}
