@@ -1,6 +1,7 @@
 import { useState } from "react";
 import Navbar from "./components/Navbar";
 import Loader from "./components/Loader/Loader";
+import Services from "./components/Services";
 
 
 export default function App() {
@@ -12,7 +13,8 @@ export default function App() {
       {!loading && (
         <div className="relative">         
           <Navbar />
-          <main>           
+          <main>  
+            <Services />         
           </main>     
         </div>
       )}
