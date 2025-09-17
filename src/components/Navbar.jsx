@@ -155,13 +155,18 @@ const Navbar = () => {
         <motion.img
           src="/images/p1.png"
           alt="Space Object 4"
-          className="absolute w-14 h-14 md:w-18 md:h-18 top-1/3 right-1/4 transform -translate-x-1/2 -translate-y-1/2 z-0"
+          className="absolute w-12 h-12 sm:w-14 sm:h-14 md:w-18 md:h-18 
+             top-1/4 sm:top-1/3 right-1/6 sm:right-1/4 
+             transform -translate-x-1/2 -translate-y-1/2 z-0"
           variants={floatingImageVariants}
         />
+
         <motion.img
           src="/images/p2.png"
           alt="Space Object 5"
-          className="absolute w-18 h-18 md:w-22 md:h-22 bottom-1/4 right-1/3 transform -translate-x-1/2 -translate-y-1/2 z-0"
+          className="absolute w-14 h-14 sm:w-18 sm:h-18 md:w-22 md:h-22 
+             bottom-1/5 sm:bottom-1/4 right-1/5 sm:right-1/3 
+             transform -translate-x-1/2 -translate-y-1/2 z-0"
           variants={floatingImageVariants}
         />
 
@@ -211,51 +216,56 @@ const Navbar = () => {
 
       {/* Fullscreen Overlay Menu */}
       {menuOpen && (
-        <div className="fixed inset-0 z-50 bg-[#0e0f12] text-white flex flex-col lg:flex-row items-center justify-center px-8 py-12">
+        <div className="fixed inset-0 z-50 bg-[#0e0f12] text-white overflow-y-auto overflow-x-hidden">
           {/* Close Button */}
           <div
-            className="absolute top-4 right-4 sm:top-10 sm:right-16 p-2 rounded-lg bg-white/10 hover:bg-white/20 transition cursor-pointer text-2xl sm:text-3xl md:text-4xl"
+            className="absolute top-4 right-4 sm:top-6 sm:right-6 p-2 rounded-lg bg-white/10 hover:bg-white/20 transition cursor-pointer text-2xl sm:text-3xl md:text-4xl"
             onClick={() => setMenuOpen(false)}
           >
             ✕
           </div>
 
-          {/* Fancy Animated Website Name */}
+          {/* Website Name */}
           <motion.h1
             initial={{ opacity: 0, y: -50, scale: 0.8 }}
             animate={{ opacity: 1, y: 0, scale: 1 }}
             transition={{ duration: 1, type: "spring", stiffness: 120 }}
-            className="absolute top-4 sm:top-10 left-1/2 transform -translate-x-1/2 text-2xl sm:text-4xl md:text-5xl font-bold uppercase tracking-widest"
+            className="text-2xl sm:text-4xl md:text-5xl font-bold uppercase tracking-widest text-center mt-6 sm:mt-10"
           >
             GALAXMIND
           </motion.h1>
 
-          <div className="flex flex-col lg:flex-row w-full max-w-7xl gap-16 mt-16 lg:mt-48">
+          <div
+            className="flex flex-col lg:flex-row w-full max-w-full sm:max-w-7xl mx-auto gap-4 sm:gap-8 lg:gap-16 px-2 sm:px-8
+                h-full lg:h-auto lg:min-h-[90vh] lg:items-center lg:justify-center mt-6 sm:mt-10 lg:mt-0"
+          >
             {/* Navigation */}
-            <div className="flex-1">
-              <h2 className="text-lg text-gray-400 mb-4">Home</h2>
-              <ul className="space-y-4">
-                <li className="text-xl hover:text-orange-400 transition">
+            <div className="flex-1 min-w-0">
+              <h2 className="text-base sm:text-lg text-gray-400 mb-2 sm:mb-4">
+                Home
+              </h2>
+              <ul className="space-y-2 sm:space-y-3">
+                <li className="text-lg sm:text-xl hover:text-orange-400 transition">
                   Services
                 </li>
-                <li className="text-xl hover:text-orange-400 transition">
+                <li className="text-lg sm:text-xl hover:text-orange-400 transition">
                   About
                 </li>
-                <li className="text-xl hover:text-orange-400 transition">
+                <li className="text-lg sm:text-xl hover:text-orange-400 transition">
                   Success
                 </li>
-                <li className="text-xl hover:text-orange-400 transition">
+                <li className="text-lg sm:text-xl hover:text-orange-400 transition">
                   Shop
                 </li>
-                <li className="text-xl hover:text-orange-400 transition">
+                <li className="text-lg sm:text-xl hover:text-orange-400 transition">
                   Contact Us
                 </li>
               </ul>
             </div>
 
             {/* Submenu */}
-            <div className="flex-1">
-              <ul className="space-y-2">
+            <div className="flex-1 min-w-0 mt-4 lg:mt-0">
+              <ul className="space-y-1 sm:space-y-2 text-sm sm:text-base">
                 <li>Computer AI</li>
                 <li>Construction</li>
                 <li>Automobile</li>
@@ -269,14 +279,14 @@ const Navbar = () => {
             </div>
 
             {/* Image and Contact */}
-            <div className="flex-1 flex flex-col items-start gap-4">
+            <div className="flex-1 min-w-0 flex flex-col items-start gap-2 sm:gap-4 mt-4 lg:mt-0">
               <img
                 src="https://res.cloudinary.com/dxohwanal/image/upload/v1758099010/Petrolium-Chamber_ldez6u.jpg"
                 alt="Industry"
-                className="w-full h-64 object-cover rounded"
+                className="w-full h-48 sm:h-64 md:h-64 object-cover rounded"
               />
 
-              <div className="text-sm mt-4">
+              <div className="text-xs sm:text-sm mt-2 sm:mt-4">
                 <p>
                   <strong>Email:</strong> neaz@gmail.com
                 </p>
@@ -285,10 +295,10 @@ const Navbar = () => {
                 </p>
               </div>
 
-              <div className="flex gap-4 mt-4">
-                <FaInstagram className="cursor-pointer text-xl sm:text-2xl md:text-3xl" />
-                <FaFacebookF className="cursor-pointer text-xl sm:text-2xl md:text-3xl" />
-                <FaSearch className="cursor-pointer text-xl sm:text-2xl md:text-3xl" />
+              <div className="flex gap-2 sm:gap-4 mt-2 sm:mt-4">
+                <FaInstagram className="cursor-pointer text-lg sm:text-xl md:text-2xl" />
+                <FaFacebookF className="cursor-pointer text-lg sm:text-xl md:text-2xl" />
+                <FaSearch className="cursor-pointer text-lg sm:text-xl md:text-2xl" />
               </div>
             </div>
           </div>
