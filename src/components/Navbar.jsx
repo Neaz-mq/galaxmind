@@ -14,7 +14,7 @@ const Navbar = () => {
   };
 
   const orbitImageVariants = {
-    hidden: { x: 0, y: 0, scale: 1, rotate: 0 }, // no opacity
+    hidden: { x: 0, y: 0, scale: 1, rotate: 0 },
     show: {
       x: [0, 20, 40, 20, 0, -20, -40, -20, 0],
       y: [0, -10, 0, 10, 0, -10, 0, 10, 0],
