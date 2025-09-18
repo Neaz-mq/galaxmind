@@ -3,7 +3,8 @@ import Navbar from "./components/Navbar";
 import Loader from "./components/Loader/Loader";
 import Services from "./components/Services";
 import Exploration from "./components/Exploration";
-import Success from "./components/Success";
+import Success from "./components/Success/Success";
+import Pluton from "./components/Pluton";
 
 
 export default function App() {
@@ -18,7 +19,8 @@ export default function App() {
           <main>  
             <Services />   
             <Exploration /> 
-            <Success />     
+            <Success />   
+            <Pluton />  
           </main>     
         </div>
       )}
