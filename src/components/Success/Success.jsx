@@ -34,7 +34,7 @@ const Success = () => {
     return () => {
       document.head.removeChild(styleSheet);
     };
-  }, []);
+  }, );
 
   const colors = {
     red: "#ef4444",
