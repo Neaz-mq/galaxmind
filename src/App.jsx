@@ -7,6 +7,7 @@ import Success from "./components/Success/Success";
 import Pluton from "./components/Pluton";
 import About from "./components/About";
 import Footer from "./components/Footer";
+import ScrollToTop from "./components/ScrollToTop";
 
 
 export default function App() {
@@ -25,7 +26,8 @@ export default function App() {
             <Pluton />  
             <About />
           </main>   
-          <Footer />  
+          <Footer /> 
+          <ScrollToTop /> 
         </div>
       )}
     </>

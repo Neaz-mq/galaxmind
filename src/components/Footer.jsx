@@ -27,16 +27,16 @@ const Footer = () => {
 
           {/* Navigation */}
           <nav className="flex space-x-6 text-sm sm:text-base">
-            <a href="#" className="hover:text-purple-400 transition">
+            <a href="#" className="hover:text-[#8A4C24] transition">
               Home
             </a>
-            <a href="#" className="hover:text-purple-400 transition">
+            <a href="#" className="hover:text-[#8A4C24] transition">
               About Us
             </a>
-            <a href="#" className="hover:text-purple-400 transition">
+            <a href="#" className="hover:text-[#8A4C24] transition">
               Success
             </a>
-            <a href="#" className="hover:text-purple-400 transition">
+            <a href="#" className="hover:text-[#8A4C24] transition">
               Services
             </a>
           </nav>
