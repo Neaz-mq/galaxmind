@@ -47,7 +47,7 @@ const Success = () => {
     <section className="bg-black text-white md:py-28 py-20 px-4 sm:px-6 lg:px-12 font-sans">
       {/* Top Section */}
       <div className="text-center mb-16">
-        <p className="text-sm uppercase  tracking-[4px] text-[#8A4C24]">
+        <p className="text-sm uppercase tracking-[4px] text-[#8A4C24]">
           Success
         </p>
         <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold mt-4">

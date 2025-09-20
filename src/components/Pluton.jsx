@@ -1,5 +1,3 @@
-import React from "react";
-
 const Pluton = () => {
   return (
     <section className="bg-black text-white md:py-10 py-6 px-4 sm:px-6 lg:px-12 font-sans">
