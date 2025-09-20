@@ -2,9 +2,8 @@ import React from "react";
 
 const Pluton = () => {
   return (
-    <section className="bg-black text-white md:py-20 py-8 px-4 sm:px-6 lg:px-12 font-sans">
+    <section className="bg-black text-white md:py-10 py-6 px-4 sm:px-6 lg:px-12 font-sans">
       <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-12 items-center">
-        
         {/* Left Section - Planet Image */}
         <div className="flex justify-center">
           <img
@@ -30,19 +29,23 @@ const Pluton = () => {
           </p>
 
           {/* Facts list - Single Line Sentences */}
-         <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
-  <ul className="space-y-3 text-gray-300 text-[15px] ">
-    <li className="flex items-start md:whitespace-nowrap whitespace-normal">
-      <span className="text-sm sm:text-xl text-[#8A4C24] mr-3">•</span>
-      A dwarf planet in the Kuiper Belt
-    </li>
-   
-    <li className="flex items-start md:whitespace-nowrap whitespace-normal">
-      <span className="text-sm sm:text-xl text-[#8A4C24] mr-3">•</span>
-      Its largest moon is Charon
-    </li>
-  </ul>
-</div>
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
+            <ul className="space-y-3 text-gray-300 text-[15px] ">
+              <li className="flex items-start md:whitespace-nowrap whitespace-normal">
+                <span className="text-sm sm:text-xl text-[#8A4C24] mr-3">
+                  •
+                </span>
+                A dwarf planet in the Kuiper Belt
+              </li>
+
+              <li className="flex items-start md:whitespace-nowrap whitespace-normal">
+                <span className="text-sm sm:text-xl text-[#8A4C24] mr-3">
+                  •
+                </span>
+                Its largest moon is Charon
+              </li>
+            </ul>
+          </div>
         </div>
 
         {/* Right Section - Orbit Image */}
