@@ -5,6 +5,7 @@ import Services from "./components/Services";
 import Exploration from "./components/Exploration";
 import Success from "./components/Success/Success";
 import Pluton from "./components/Pluton";
+import About from "./components/About";
 
 
 export default function App() {
@@ -21,6 +22,7 @@ export default function App() {
             <Exploration /> 
             <Success />   
             <Pluton />  
+            <About />
           </main>     
         </div>
       )}

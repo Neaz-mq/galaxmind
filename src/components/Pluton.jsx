@@ -1,6 +1,8 @@
+import React from "react";
+
 const Pluton = () => {
   return (
-    <section className="bg-black text-white py-20 px-4 sm:px-6 lg:px-12 font-sans">
+    <section className="bg-black text-white md:py-20 py-8 px-4 sm:px-6 lg:px-12 font-sans">
       <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-12 items-center">
         
         {/* Left Section - Planet Image */}
@@ -8,7 +10,7 @@ const Pluton = () => {
           <img
             src="https://res.cloudinary.com/dxohwanal/image/upload/v1758173998/asset-21-1_odubb0.png"
             alt="Pluto"
-            className="w-48 sm:w-64 md:w-72 lg:w-80 xl:w-96 h-auto rounded-full shadow-[0_0_30px_rgba(255,255,255,0.3)] transition-transform duration-500 hover:scale-105"
+            className="w-40 sm:w-56 md:w-72 lg:w-80 xl:w-96 h-auto rounded-full shadow-[0_0_30px_rgba(255,255,255,0.3)] transition-transform duration-500 hover:scale-105"
           />
         </div>
 
@@ -18,7 +20,7 @@ const Pluton = () => {
             Pluto
           </h2>
 
-          <p className="text-gray-300 leading-relaxed mb-8 text-sm sm:text-base md:text-lg text-justify md:text-left">
+          <p className="text-gray-300 leading-relaxed mb-8 text-sm sm:text-base md:text-lg  md:text-left">
             Pluto, once considered the ninth planet in our solar system, was
             reclassified as a dwarf planet in 2006. It is a complex and
             fascinating world with a heart-shaped glacier on its surface, a thin
@@ -27,23 +29,20 @@ const Pluton = () => {
             Neptune.
           </p>
 
-          {/* Facts list */}
-          <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
-            <ul className="space-y-3 text-gray-300 text-sm sm:text-base">
-              <li className="flex items-start">
-                <span className="text-lg sm:text-xl text-yellow-400 mr-3">•</span>
-                A dwarf planet in the Kuiper Belt
-              </li>
-              <li className="flex items-start">
-                <span className="text-lg sm:text-xl text-yellow-400 mr-3">•</span>
-                Has a heart-shaped glacier named Tombaugh Regio
-              </li>
-              <li className="flex items-start">
-                <span className="text-lg sm:text-xl text-yellow-400 mr-3">•</span>
-                Its largest moon is Charon
-              </li>
-            </ul>
-          </div>
+          {/* Facts list - Single Line Sentences */}
+         <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
+  <ul className="space-y-3 text-gray-300 text-[15px] ">
+    <li className="flex items-start md:whitespace-nowrap whitespace-normal">
+      <span className="text-sm sm:text-xl text-[#8A4C24] mr-3">•</span>
+      A dwarf planet in the Kuiper Belt
+    </li>
+   
+    <li className="flex items-start md:whitespace-nowrap whitespace-normal">
+      <span className="text-sm sm:text-xl text-[#8A4C24] mr-3">•</span>
+      Its largest moon is Charon
+    </li>
+  </ul>
+</div>
         </div>
 
         {/* Right Section - Orbit Image */}
@@ -51,7 +50,7 @@ const Pluton = () => {
           <img
             src="https://res.cloudinary.com/dxohwanal/image/upload/v1758174011/asset-26_qvbl1g.png"
             alt="Pluto's Orbit"
-            className="w-56 md:w-72 lg:w-80 xl:w-96 h-auto drop-shadow-[0_0_25px_rgba(0,200,255,0.4)] transition-transform duration-500 hover:scale-105"
+            className="w-48  md:w-64  h-auto drop-shadow-[0_0_25px_rgba(0,200,255,0.4)] transition-transform duration-500 hover:scale-105"
           />
         </div>
       </div>
