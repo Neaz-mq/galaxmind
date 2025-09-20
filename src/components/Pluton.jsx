@@ -1,6 +1,6 @@
 const Pluton = () => {
   return (
-    <section className="bg-black text-white md:py-10 py-6 px-4 sm:px-6 lg:px-12 font-sans">
+    <section className="bg-black text-white md:py-10 py-6 px-4 sm:px-6 lg:px-12 ">
       <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-12 items-center">
         {/* Left Section - Planet Image */}
         <div className="flex justify-center">

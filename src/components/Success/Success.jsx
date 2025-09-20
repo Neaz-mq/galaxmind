@@ -44,7 +44,7 @@ const Success = () => {
   };
 
   return (
-    <section className="bg-black text-white md:py-28 py-20 px-4 sm:px-6 lg:px-12 font-sans">
+    <section className="bg-black text-white md:py-28 py-20 px-4 sm:px-6 lg:px-12 ">
       {/* Top Section */}
       <div className="text-center mb-16">
         <p className="text-sm uppercase tracking-[4px] text-[#8A4C24]">

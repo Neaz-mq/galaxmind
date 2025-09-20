@@ -6,6 +6,7 @@ import Exploration from "./components/Exploration";
 import Success from "./components/Success/Success";
 import Pluton from "./components/Pluton";
 import About from "./components/About";
+import Footer from "./components/Footer";
 
 
 export default function App() {
@@ -23,7 +24,8 @@ export default function App() {
             <Success />   
             <Pluton />  
             <About />
-          </main>     
+          </main>   
+          <Footer />  
         </div>
       )}
     </>
