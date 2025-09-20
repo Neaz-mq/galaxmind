@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import React, { useState } from "react";
+import { useState } from "react";
 import { FaBars, FaInstagram, FaFacebookF, FaSearch } from "react-icons/fa";
 
 const Navbar = () => {

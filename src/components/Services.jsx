@@ -1,4 +1,3 @@
-import React from "react";
 import { FaBookOpen, FaBrain, FaRocket } from "react-icons/fa";
 import { FaArrowRight } from "react-icons/fa";
 
